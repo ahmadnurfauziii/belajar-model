@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('layouts.app')
+=======
+@extends('layout.main')
+>>>>>>> 25afef2e01bfa65f409fb96896b7cf22248aa462
 @section('content')
         <!-- header image -->
         <div class="header-img-2"></div>

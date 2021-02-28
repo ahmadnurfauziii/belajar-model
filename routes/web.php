@@ -1,10 +1,16 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
 
+=======
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+>>>>>>> 25afef2e01bfa65f409fb96896b7cf22248aa462
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +22,22 @@ use App\Http\Controllers\ContactController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+<<<<<<< HEAD
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::resource('/contact-us', ContactController::class, [
    'only' => ['index','store']
 ]);
+=======
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+
+
+>>>>>>> 25afef2e01bfa65f409fb96896b7cf22248aa462

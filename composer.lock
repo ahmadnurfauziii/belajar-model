@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "ddeabc1ce42c24615f2fd0343a6ea0f2",
+=======
+    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+>>>>>>> 25afef2e01bfa65f409fb96896b7cf22248aa462
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1129,6 +1133,7 @@
             "time": "2021-01-26T20:35:18+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/ui",
             "version": "v3.2.0",
             "source": {
@@ -1187,6 +1192,8 @@
             "time": "2021-01-06T19:20:22+00:00"
         },
         {
+=======
+>>>>>>> 25afef2e01bfa65f409fb96896b7cf22248aa462
             "name": "league/commonmark",
             "version": "1.5.7",
             "source": {
@@ -5423,6 +5430,7 @@
         },
         {
             "name": "mockery/mockery",
+<<<<<<< HEAD
             "version": "1.4.2",
             "source": {
                 "type": "git",
@@ -5433,6 +5441,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/mockery/mockery/zipball/20cab678faed06fac225193be281ea0fddb43b93",
                 "reference": "20cab678faed06fac225193be281ea0fddb43b93",
+=======
+            "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "d1339f64479af1bee0e82a0413813fe5345a54ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/d1339f64479af1bee0e82a0413813fe5345a54ea",
+                "reference": "d1339f64479af1bee0e82a0413813fe5345a54ea",
+>>>>>>> 25afef2e01bfa65f409fb96896b7cf22248aa462
                 "shasum": ""
             },
             "require": {
@@ -5489,9 +5509,15 @@
             ],
             "support": {
                 "issues": "https://github.com/mockery/mockery/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/mockery/mockery/tree/master"
             },
             "time": "2020-08-11T18:10:13+00:00"
+=======
+                "source": "https://github.com/mockery/mockery/tree/1.4.3"
+            },
+            "time": "2021-02-24T09:51:49+00:00"
+>>>>>>> 25afef2e01bfa65f409fb96896b7cf22248aa462
         },
         {
             "name": "myclabs/deep-copy",
