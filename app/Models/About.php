@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class About extends Model
 {
     use HasFactory;
-    public static function index()
-    {
-        return Post::all();
-    }     
+    
+    public static function Abouts()
+    {   
+        return About::all();
+    }
 }

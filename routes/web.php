@@ -1,7 +1,11 @@
 <?php
 
-use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PostController::class, 'index']);
-Route::get('posts/{slug}', [PostController::class, 'show'])
-    ->name('posts.show');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/about', [AboutController::class, 'index','whos','abouts'])->name('about');
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+Route::resource('/contact-us', ContactController::class, [
+   'only' => ['index','store']
+]);

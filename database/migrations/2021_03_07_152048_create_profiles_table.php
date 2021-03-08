@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddImageColumnIntoPostsTable extends Migration
+class CreateProfilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class AddImageColumnIntoPostsTable extends Migration
      */
     public function up()
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->string('image')->after('slug')->nullable();
+        Schema::create('profiles', function (Blueprint $table) {
+            $table->id();        
+            $table->string('image');            
+            $table->boolean('draft')->default(false);
+            $table->timestamps();
         });
     }
 
@@ -25,8 +28,6 @@ class AddImageColumnIntoPostsTable extends Migration
      */
     public function down()
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->dropColumn('image');
-        });
+        Schema::dropIfExists('profiles');
     }
 }

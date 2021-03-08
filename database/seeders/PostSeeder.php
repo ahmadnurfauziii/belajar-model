@@ -15,11 +15,11 @@ class PostSeeder extends Seeder
     public function run()
     {
         DB::table('posts')->insert([
-            'title' => 'Belajar Model Dengan Laravel',
-            'slug' => ' belajar-model-dengan-laravel',
-            'image' => 'https://via.placeholder.com/640x480.png/00ff77?text=Belajar Model',
-            'content' => 'Belajar dengan Laravel sungguh menyenangkan',
+            'title' => 'Aenean sollicitudin',            
+            'image' => 'img/17.jpg',
+            'description' => ', lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.',
             'draft' => 0
-        ]);
+        ]);         
+       
     }
 }
