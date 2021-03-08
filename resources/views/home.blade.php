@@ -1,12 +1,5 @@
-<<<<<<< HEAD
+
 @extends('layouts.app')
-=======
-<<<<<<< HEAD
-@extends('layouts.app')
-=======
-@extends('layout.main')
->>>>>>> 25afef2e01bfa65f409fb96896b7cf22248aa462
->>>>>>> fbc4a0d145f7d64a13bace27f7c79ebca819bd15
 
 @section('content')
 <div class="header-img"></div>
