@@ -35,16 +35,62 @@
                     <div class="col-lg-12">
                         <ul id="filters" class="folio-filters">
                             <li class="current"><a href="#" data-filter="*">All</a></li>
+<<<<<<< HEAD
                             
+=======
+                            <li class=""><a href="#" data-filter=".design">Design</a></li>
+                            <li class=""><a href="#" data-filter=".web">Web</a></li>
+                            <li class=""><a href="#" data-filter=".branding">Branding</a></li>
+                            <li class=""><a href="#" data-filter=".print">Print</a></li>
+>>>>>>> fbc4a0d145f7d64a13bace27f7c79ebca819bd15
                         </ul>
                     </div>
                 </div>
                 <div id="folio-container" class="row">
+<<<<<<< HEAD
                     @foreach($profiles as $profile)
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item design">
                         <img src="{{($profile->image)}}" alt="Image" class="img-thumbnail">
                     </div> 
                     @endforeach                  
+=======
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item design">
+                        <img src="img/18.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item design">
+                        <img src="img/19.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item design">
+                        <img src="img/20.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item design">
+                        <img src="img/21.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item web">
+                        <img src="img/22.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item web">
+                        <img src="img/23.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item web">
+                        <img src="img/24.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item branding">
+                        <img src="img/25.jpg" alt="Image" class="img-thumbnail">
+                        </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item branding">
+                        <img src="img/26.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item branding">
+                        <img src="img/27.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item print">
+                        <img src="img/28.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 margin-bottom-30 folio-item print">
+                        <img src="img/29.jpg" alt="Image" class="img-thumbnail">
+                    </div>
+>>>>>>> fbc4a0d145f7d64a13bace27f7c79ebca819bd15
                 </div>
             </div>
         </section>
