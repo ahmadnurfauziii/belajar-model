@@ -14,11 +14,28 @@ class WhoSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('whos')->insert([                        
-            'image' => 'img/13.png',
-            'title' => 'CONSEQUAT',
-            'description' => 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat.',
-            'draft' => 0
-        ]);
+        $data = [
+            [    
+                'image' => 'img/11.png',
+                'title' => 'LOREM QUIS',
+                'description' => 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat.',
+                'draft' => 0,
+                ],
+            [    
+                'image' => 'img/12.png',
+                'title' => 'PROIN GRAVID',
+                'description' => 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat.',
+                 'draft' => 0, 
+            ],
+            [
+                'image' => 'img/13.png',
+                'title' => 'CONSEQUAT',
+                'description' => 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit consequat.',
+                'draft' => 0, 
+            ]
+            ];    
+        
+
+        DB::table('whos')->insert($data);    
     }
 }

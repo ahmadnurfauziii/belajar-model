@@ -14,12 +14,26 @@ class AboutSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('abouts')->insert([
-            'image' => 'img/7.jpg',
-            'title' => 'MORBI ACCUMSAN',          
-            'description' => 'Morbi dapibus rhoncus nulla ac tempus. Integer felis lorem, fermentum quis nisl accumsan, gravida gravida est. Cras ultrices rhoncus dui ut laoreet. Fusce tincidunt, urna a imperdiet tempor, orci dolor dictum elit, sit amet malesuada mauris magna eget dolor.
-                            Phasellus lobortis nisl ut tortor placerat, vel auctor felis semper. Quisque ut auctor sapien. Proin gravida arcu malesuada, venenatis nisl vitae, egestas sem. Vestibulum mauris magna, aliquam non commodo ac, porttitor a augue.',
-            'draft' => 0
-        ]);   
+        $data = [
+            [    
+                'image' => 'img/8.jpg',
+                'title' => 'Feufelisda',          
+                'description' => 'Nullam Acurna',
+                'draft' => 0,
+                ],
+            [    
+                'image' => 'img/9.jpg',
+                'title' => 'Feufelisda',          
+                'description' => 'Nullam Acurna',
+                'draft' => 0, 
+            ],
+            [
+            'image' => 'img/10.jpg',
+                'title' => 'Feufelisda',          
+                'description' => 'Nullam Acurna',
+                'draft' => 0,  
+            ]
+            ];
+            DB::table('abouts')->insert($data);
     }
 }

@@ -31,9 +31,12 @@
             </div>
         </div>
         <div class="row">
+            @foreach ($sliders as $item)
+                
             <div class="col-lg-6 col-md-6">
-                <h3 class="section-title-2 text-uppercase font-weight-300"><b>Morbi</b> <span class="blue-text">Accumsan</span></h3>
-                <p>Credit goes to <a href="http://unsplash.com">Unsplash</a> for images used in this template. Morbi dapibus rhoncus nulla ac tempus. Integer felis lorem, fermentum quis nisl accumsan, gravida gravida est. Cras ultrices rhoncus dui ut laoreet. Fusce tincidunt, urna a imperdiet tempor, orci dolor dictum elit, sit amet malesuada mauris magna eget dolor. Morbi ornare convallis vulputate. Donec ut suscipit nisl, ac elementum nisi.</p>
+                <h3 class="section-title-2 text-uppercase font-weight-300"><b>{{$item['title']}}</b></h3>
+                <p>{{$item['description']}}</p>
+                @endforeach
                 <ul class="gray-text ul-1">
                     <li>Sed non mauris vitae erat consequat auctor</li>
                     <li>Class aptent taciti sociosqu</li>
@@ -46,15 +49,13 @@
                 <div class="carousel-container">
                     <div class="crsl-items" data-navigation="navbtns">
                         <div class="crsl-wrap">
+                            @foreach ($picture as $item)
+                            
                             <figure class="crsl-item">
-                                <img src="img/1.jpg" alt="Image" class="img-responsive img-thumbnail">
+                                <img src={{($item->image)}} alt="Image" class="img-responsive img-thumbnail">
                             </figure>
-                            <figure class="crsl-item">
-                                <img src="img/2.jpg" alt="Image" class="img-responsive img-thumbnail">
-                            </figure>
-                            <figure class="crsl-item">
-                                <img src="img/3.jpg" alt="Image" class="img-responsive img-thumbnail">
-                            </figure>
+
+                            @endforeach
                         </div>
                     </div>
                 </div>   <!-- carousel-container -->
@@ -107,12 +108,10 @@
             </div>
             <div class="col-lg-7 col-md-7">
                 <h3 class="section-title-2 text-uppercase font-weight-300"><b>Our</b> <span class="blue-text">Technologies</span></h3>
-                <p class="justify-text">Sed tempor ante aliquam, finibus diam in, mattis enim. Aliquam neque odio, aliquam non ullamcorper nec, tempus non libero. Etiam in odio rutrum, euismod massa quis, ullamcorper diam. Mauris ac lectus mollis, mollis tortor vel, placerat elit. Quisque euismod ut neque in rutrum. Quisque vitae dignissim elit. Aliquam vel erat ante. Pellentesque luctus efficitur ultrices. Nam eget odio ultrices, laoreet arcu eu, vehicula ligula. Quisque non nisi finibus, consequat nulla vitae, accumsan lectus. Morbi vestibulum, massa a gravida commodo, enim nisi porttitor nulla, ut aliquam turpis urna non sem. Suspendisse id odio ac orci ornare fermentum. Sed tincidunt id odio vel interdum.</p>
-                <p class="justify-text">
-                    Etiam mollis nisi ut eleifend condimentum. Morbi posuere convallis lacus, a venenatis risus mattis eget. Vestibulum vitae gravida augue, vitae molestie dui. Duis lobortis nisi eget consequat tincidunt. Sed vel tortor vitae nisl pharetra dignissim. Sed lorem neque, sagittis eget sem sit amet, aliquet fringilla tortor. Praesent et aliquet arcu. Nunc tempor vulputate sapien, ut varius risus blandit at.
-                </p>
-                <p class="justify-text">
-                    Phasellus lobortis nisl ut tortor placerat, vel auctor felis semper. Quisque ut auctor sapien. Proin gravida arcu malesuada, venenatis nisl vitae, egestas sem. Vestibulum mauris magna, aliquam non commodo ac, porttitor a augue. Cras laoreet est at magna malesuada, a viverra ipsum luctus. Nullam sed lacinia magna. Donec ullamcorper lectus et diam porttitor, a tincidunt diam iaculis. Donec sagittis posuere pellentesque.</p>
+                @foreach ($homes as $home)
+                    <h1>{{$home['title']}}</h1>
+                    <p>{{$home['description']}}</p>
+                @endforeach
             </div>
         </div>
     </div>
